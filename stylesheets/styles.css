@@ -324,3 +324,10 @@ ul.pub li {
   color: rgb(14, 42, 56);
   font-weight: bold;
 }
+
+.circle-image {
+  width: 180px; /* Width of the image */
+  height: 180px; /* Height of the image */
+  border-radius: 50%; /* Creates the circle */
+  overflow: hidden; /* Ensures no overflow outside the circle */
+}
