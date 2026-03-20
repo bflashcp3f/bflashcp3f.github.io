@@ -37,6 +37,7 @@ h3, h4, h5, h6 {
 a {
   color:#39c;
   text-decoration:none;
+  transition: color 0.2s;
 }
 
 a:hover {
@@ -117,9 +118,6 @@ header ul {
 }
 
 header li {
-  /*width:40px;*/
-  /*float:left;*/
-  /*height:20px;*/
   margin: 10px 0;
 }
 
@@ -131,65 +129,6 @@ header li a {
 header li a:hover {
   color:#069;
 }
-
-/*header ul {
-  list-style:none;
-  height:40px;
-  padding:0;
-  background: #f4f4f4;
-  border-radius:5px;
-  border:1px solid #e0e0e0;
-  width:270px;
-}
-
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #e0e0e0;
-  height:40px;
-}
-
-header li:first-child a {
-  border-radius:5px 0 0 5px;
-}
-
-header li:last-child a {
-  border-radius:0 5px 5px 0;
-}
-
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:34px;
-}
-
-header ul a:hover {
-  color:#999;
-}
-
-header ul a:active {
-  background-color:#f0f0f0;
-}
-
-strong {
-  color:#222;
-  font-weight:500;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
-}
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}*/
 
 section {
   width:600px;
@@ -220,7 +159,6 @@ footer ul {
   list-style:none;
   height:40px;
   padding:0;
-  /*width:270px;*/
 }
 
 footer li {
@@ -314,7 +252,6 @@ footer li a:hover {
 }
 
 
-/* Added by Yuhao */
 ul.pub li {
   margin: 0 0 15px 0;
 }
@@ -325,9 +262,59 @@ ul.pub li {
   font-weight: bold;
 }
 
+ul.pub li a[href*="arxiv"],
+ul.pub li a[href*="github"],
+ul.pub li a[href*="blog"],
+ul.pub li a[href*="firebench"] {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+ul.pub li a[href*="arxiv"]:hover,
+ul.pub li a[href*="github"]:hover,
+ul.pub li a[href*="blog"]:hover,
+ul.pub li a[href*="firebench"]:hover {
+  background-color: #39c;
+  color: #fff;
+}
+
 .circle-image {
-  width: 180px; /* Width of the image */
-  height: 180px; /* Height of the image */
-  border-radius: 50%; /* Creates the circle */
-  overflow: hidden; /* Ensures no overflow outside the circle */
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+header h1 {
+  display: inline-block;
+  margin-top: 0.3em;
+  margin-bottom: 0.4em;
+}
+
+header .chinese-name {
+  display: inline-block;
+  font-size: 1.6em;
+  text-indent: 10px;
+  margin-bottom: 0.4em;
+}
+
+.social-icon {
+  font-size: 1.8em;
+  color: black;
+  margin-right: 0.15em;
+  transition: color 0.2s;
+}
+
+.social-icon:hover {
+  color: #39c;
+}
+
+.research-subtitle {
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #777;
 }
