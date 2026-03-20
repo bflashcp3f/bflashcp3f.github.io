@@ -329,3 +329,100 @@ header .chinese-name {
   font-weight: normal;
   color: #777;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #d1d5db;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #e5e7eb;
+  }
+
+  h2 {
+    color: #d1d5db;
+  }
+
+  a {
+    color: #60a5fa;
+  }
+
+  a:hover {
+    color: #93bbfd;
+  }
+
+  header li a,
+  footer li a {
+    color: #e5e7eb;
+  }
+
+  header li a:hover,
+  footer li a:hover {
+    color: #60a5fa;
+  }
+
+  .social-icon {
+    color: #e5e7eb;
+  }
+
+  .social-icon:hover {
+    color: #60a5fa;
+  }
+
+  .paper-title {
+    color: #e5e7eb;
+  }
+
+  ul.pub li em:not(.paper-title) {
+    color: #9ca3af;
+  }
+
+  .paper-link {
+    background-color: #374151;
+    color: #d1d5db;
+  }
+
+  .paper-link:hover {
+    background-color: #60a5fa;
+    color: #fff;
+  }
+
+  .circle-image {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .research-subtitle {
+    color: #9ca3af;
+  }
+
+  footer {
+    border-top-color: #333;
+    color: #666;
+  }
+
+  blockquote {
+    border-left-color: #333;
+  }
+
+  code, pre {
+    color: #d1d5db;
+  }
+
+  pre {
+    background: #374151;
+    border-color: #333;
+  }
+
+  hr {
+    background: #333;
+  }
+
+  th, td {
+    border-bottom-color: #333;
+  }
+
+  section {
+    border-color: #333;
+  }
+}
