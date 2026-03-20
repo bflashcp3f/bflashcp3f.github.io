@@ -205,6 +205,11 @@ footer li a:hover {
     margin-bottom:20px;
   }
 
+  header .circle-image {
+    display: block;
+    margin: 0 auto 15px;
+  }
+
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
