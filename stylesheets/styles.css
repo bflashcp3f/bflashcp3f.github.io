@@ -283,6 +283,14 @@ ul.pub li em:not(.paper-title) {
   font-size: 0.9em;
 }
 
+ul.pub li a:not(.paper-link) {
+  color: #777;
+}
+
+ul.pub li a:not(.paper-link):hover {
+  color: #2563eb;
+}
+
 .paper-link {
   display: inline-block;
   padding: 1px 6px;
